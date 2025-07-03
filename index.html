@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kavya Vaddadi - Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,11 +13,12 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #f6fbff 0%, #e3ecf7 100%);
+            background: linear-gradient(135deg, #e0eaff 0%, #b6d0f7 100%);
             min-height: 100vh;
+            font-size: 1.12em;
         }
 
         .container {
@@ -77,8 +79,8 @@
         }
 
         .section-title {
+            color: #0ea5e9;
             font-size: 1.5em;
-            color: #2563eb;
             margin-bottom: 20px;
             border-bottom: 2px solid #f0f0f0;
             padding-bottom: 10px;
@@ -111,7 +113,7 @@
         }
 
         .social-link:hover {
-            background: #2563eb;
+            background: #0ea5e9;
             color: #fff;
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
@@ -132,7 +134,7 @@
         .download-btn {
             display: inline-block;
             padding: 15px 30px;
-            background: #2563eb;
+            background: #0ea5e9;
             color: #fff;
             text-decoration: none;
             border-radius: 25px;
@@ -142,7 +144,7 @@
         }
 
         .download-btn:hover {
-            background: #2563eb;
+            background: #0ea5e9;
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
         }
@@ -161,6 +163,11 @@
         .email:hover {
             text-decoration: underline;
         }
+
+        .inst-jhu { color: #0ea5e9; font-weight: 600; }
+        .inst-iiit { color: #059669; font-weight: 600; }
+        .inst-tcs { color: #ea580c; font-weight: 600; }
+        .inst-bms { color: #be185d; font-weight: 600; }
 
         @media (max-width: 768px) {
             .container {
@@ -200,7 +207,7 @@
                 <div class="section">
                     <h2 class="section-title">About Me</h2>
                     <p class="bio">
-                        Hi! I'm Kavya Vaddadi, a Computer Science PhD candidate at Johns Hopkins University in the <a href="https://www.langmead-lab.org/" target="_blank">Langmead Lab</a>, where I develop computationally efficient tools to mitigate reference bias in large-scale genomics analyses. Previously, I earned a dual degree in Computer Science with a Master's in Data Science & Analytics from IIIT Hyderabad, worked at TCS Innovations R&D Labs, and interned at BMS. Outside of research, I love cooking, exploring nature trails, and reading books (<a href="https://www.goodreads.com/user/show/191686681-kavya-vaddadi" target="_blank">see what I'm reading</a>).
+                        Hi <span aria-label="waving hand" role="img">👋</span>! I'm Kavya Vaddadi, a Computer Science PhD candidate at <span class="inst-jhu">Johns Hopkins University</span> in the <a href="https://www.langmead-lab.org/" target="_blank">Langmead Lab</a>, where I develop computationally efficient tools to mitigate reference bias in large-scale genomics analyses. Previously, I earned a dual degree in Computer Science with a Master's in Data Science & Analytics from <span class="inst-iiit">IIIT Hyderabad, India</span>, worked as a Research Scientist at <span class="inst-tcs">TCS Innovations R&D Labs, India</span>, and spent a summer interning at <span class="inst-bms">Bristol Myers Squibb, Cambridge, Massachusetts, United States</span>. Outside of work, I love cooking, exploring nature trails, and reading books (<a href="https://www.goodreads.com/user/show/191686681-kavya-vaddadi" target="_blank">see what I'm reading</a>). <span aria-label="smile" role="img">😊</span>
                     </p>
                 </div>
 
