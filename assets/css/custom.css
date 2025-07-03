@@ -1,0 +1,14 @@
+.ScrollStyle {
+    max-height: 150px;
+    overflow-y: auto;  // Changed from 'scroll' to 'auto'
+    padding: 10px;     // Optional: for better visibility of the container
+    border: 1px solid gray;  // Optional: helps visualize the boundaries
+}
+.news-list {
+            list-style-type: none; /* Remove default bullets */
+            padding: 0; /* Remove default padding */
+        }
+.news-list li {
+            padding-left: 20px; /* Optional: Add some padding to align text nicely */
+        }
+
