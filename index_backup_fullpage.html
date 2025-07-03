@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavya Vaddadi - Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #e0eaff 0%, #b6d0f7 100%);
+            min-height: 100vh;
+            font-size: 1.12em;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            overflow: hidden;
+            margin: 40px auto;
+            max-width: 800px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #eaf3fb 0%, #dbeafe 100%);
+            color: #222;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin: 0 auto 20px;
+            display: block;
+            object-fit: cover;
+        }
+
+        .name {
+            font-size: 2.5em;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+
+        .location {
+            font-size: 1em;
+            opacity: 0.8;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            color: #0ea5e9;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+
+        .bio {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 20px;
+            background: #f8f9fa;
+            color: #333;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .social-link:hover {
+            background: #0ea5e9;
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+        }
+
+        .social-link i {
+            margin-right: 8px;
+            font-size: 1.2em;
+        }
+
+        .download-section {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #0ea5e9;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 10px;
+        }
+
+        .download-btn:hover {
+            background: #0ea5e9;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .email {
+            color: #495057;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .email:hover {
+            text-decoration: underline;
+        }
+
+        .inst-jhu { color: #0ea5e9; font-weight: 600; }
+        .inst-iiit { color: #059669; font-weight: 600; }
+        .inst-tcs { color: #ea580c; font-weight: 600; }
+        .inst-bms { color: #be185d; font-weight: 600; }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .name {
+                font-size: 2em;
+            }
+            
+            .social-links {
+                justify-content: center;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <div class="header">
+                <img src="images/profile.png" alt="Kavya Vaddadi" class="profile-image">
+                <h1 class="name">Kavya Vaddadi</h1>
+                <p class="title">Ph.D. Student in Computer Science</p>
+                <p class="location">Baltimore, MD</p>
+            </div>
+            
+            <div class="content">
+                <div class="section">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="bio">
+                        Hi <span aria-label="waving hand" role="img">👋</span>! I'm Kavya Vaddadi, a Computer Science PhD candidate at <span class="inst-jhu">Johns Hopkins University</span> in the <a href="https://www.langmead-lab.org/" target="_blank">Langmead Lab</a>, where I develop computationally efficient tools to mitigate reference bias in large-scale genomics analyses. Previously, I earned a dual degree in Computer Science with a Master's in Data Science & Analytics from <span class="inst-iiit">IIIT Hyderabad, India</span>, worked as a Research Scientist at <span class="inst-tcs">TCS Innovations R&D Labs, India</span>, and spent a summer interning at <span class="inst-bms">Bristol Myers Squibb, Cambridge, Massachusetts, United States</span>. Outside of work, I love cooking, exploring nature trails, and reading books (<a href="https://www.goodreads.com/user/show/191686681-kavya-vaddadi" target="_blank">see what I'm reading</a>). <span aria-label="smile" role="img">😊</span>
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Profiles</h2>
+                    <div class="social-links">
+                        <a href="https://scholar.google.com/citations?user=gcUPxzwAAAAJ&hl=en" class="social-link" target="_blank">
+                            <i class="fas fa-graduation-cap"></i>
+                            Google Scholar
+                        </a>
+                        <a href="https://linkedin.com/in/sai-kavya-vaddadi-75385022" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                        <a href="https://orcid.org/0000-0001-9020-2666" class="social-link" target="_blank" title="ORCID">
+                            <img src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" alt="ORCID" style="vertical-align:middle; margin-right:8px; width:20px; height:20px;">
+                            ORCID
+                        </a>
+                        <a href="https://github.com/kvaddad1" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Downloads</h2>
+                    <div class="download-section">
+                        <a href="files/pdf/Kavya_CV.pdf" class="download-btn" download>
+                            <i class="fas fa-download"></i>
+                            Download CV
+                        </a>
+                        <p style="margin-top: 15px; color: #666; font-size: 0.9em;">
+                            Click to download my current CV in PDF format
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <p>Get in touch: <a href="mailto:kvaddad1@jh.edu" class="email">kvaddad1@jh.edu</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
